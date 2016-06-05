@@ -1,0 +1,28 @@
+#include"pafogenz.h"
+
+ASTR *reorder_list(ASTR *restrict head) { /* this function doesn't have to change the.. */
+  register ASTRP lptr = head, ltmp = NULL; /* value of head in the caller */
+  auto unsigned int iter = 1;              /* return new first node pointer */
+
+  if(!lptr)
+    return NULL;
+  else if(!lptr->next)
+    return head;
+  else if(lptr == lptr->next) /* erroneous condition for singly linked list */
+    exit(EX_DATAERR);
+
+  do { 
+    ltmp = lptr->next; /* sort of like a non-bitwise (i.e. XOR) assignment swap 
+    lptr->next = lptr;  * with a temporary auxiliary variable to save state
+    lptr = ltmp;        * while the wheels are in motion.. */
+
+    if(iter) { 
+      --iter;
+      head = ltmp
+    }
+
+    lptr = lptr->next;
+  } while(lptr);
+
+  return head;
+}

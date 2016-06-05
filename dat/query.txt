@@ -1,0 +1,5 @@
+?WSDL
+;JSESSIONID=1
+?JSESSIONID=1
+?admin=true
+?debug=1

@@ -1,0 +1,15 @@
+README
+README.md
+README.txt
+ChangeLog
+CHANGELOG.txt
+INSTALL.txt
+Thumbs.db
+web.xml
+WEB-INF
+META-INF
+admin
+install.php
+settings.php
+upgrade.php
+api.key
