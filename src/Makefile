@@ -1,10 +1,10 @@
 CC = cc
 RM = rm 
-CFLAGS = -O3 -c -g -Wall -ansi -pedantic -std=c11 # -DDEBUG
+CFLAGS = -O3 -c -g -Wall -ansi -pedantic -std=c11 -I../inc # -DDEBUG
 RMFLAGS = -f
 OBJS = main.o cmd_usage.o copy_str.o verbose_exit.o is_dupe_path.o qsort_compares.o bsearch_compares.o list_size.o fputs_list.o reorder_list.o
 EXE = pafogenz
-HDRS = $(EXE).h
+HDRS = ../inc/$(EXE).h
 JUNK = core *.swp
 
 all: $(EXE)
